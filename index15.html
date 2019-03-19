@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+        }
+
+        /* p {
+            background: red;
+            text-align: center;
+            padding: 0 5px;
+            width: 300px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            color: blue;
+        }
+        div {
+            border: 1px solid rgba(255, 0, 0, 0.3); */
+        border-radius: 10px;
+        border-top-right-radius: 100px;
+        padding: 20px 5px;
+        }
+
+        span {
+            font-size: 24px;
+        }
+
+        span.green {
+            color: green;
+        }
+
+        .🐖 {
+            border: 1px solid red;
+        }
+
+        div {
+            width: 50px;
+            /* height: 50px; */
+            background: rgba(255, 0, 0, 0.3);
+            display: inline-block;
+            border-radius: 50%;
+        }
+
+        div:hover {
+            background: green;
+            cursor: pointer;
+            transition: background 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script>
+        for (var i = 0; i < 500; i++) {
+            var el = document.createElement("div")
+            var radius = `${Math.random() * 50}px`
+            el.style.height = el.style.width = radius
+            el.style.backgroundColor = `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${Math.random() * 255}, 0.3)`
+            
+            document.querySelector("body").appendChild(el)
+        }
+    </script>
+</body>
+
+</html>
