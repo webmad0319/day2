@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //undefined handling
+        // function sayHelloWorld(helloWorldStr) {
+        //     if (helloWorldStr === undefined)    document.write("Hello world")
+        //     else    document.write("Hello world " + helloWorldStr)
+        // }
+
+        // sayHelloWorld("madrid")
+
+        //using default param value
+        function sayHelloWorld(helloWorldStr = "") {
+            document.write("Hello world " + helloWorldStr)
+        }
+
+        sayHelloWorld()
+    </script>
+</body>
+</html>
