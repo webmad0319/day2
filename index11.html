@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const functions = [
+            function (param) {
+                console.log("I am in the first position " + param)
+            },
+            function () {
+                console.log("I am in the second position")
+            }];
+
+        //functions[0]("hello!!!!")
+
+        let unidimensional = [
+            9,
+            8,
+            3,
+            10
+        ]
+
+        let bidimensional = [
+            [
+                1,
+                10,
+                10
+            ],
+            [
+                7,
+                8,
+                10,
+                10
+            ],
+            [
+                10,
+                6,
+                7,
+                9,
+                10,
+                4,
+                10,
+                5
+            ]
+        ]
+
+        function avg(arr) {
+            if (arr.length === 0)   throw new Error("Usage: Your array doesnt have any data so it is wrong")
+            let acum = 0
+            
+            for (var i = 0 ; i < arr.length ; i++) {
+                acum += arr[i]
+            }
+
+            return acum / arr.length
+        }
+
+        console.log(avg(bidimensional[0]))
+        console.log(avg(bidimensional[1]))
+
+        if (avg(bidimensional[0]) > avg(bidimensional[1])) {
+            console.log("el primer aula tiene mayor media")
+        }   else {
+            console.log("el primer aula tiene menor media")
+        }
+        // avg(bidimensional[1])
+
+    </script>
+</body>
+
+</html>
